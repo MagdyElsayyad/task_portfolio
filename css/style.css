@@ -9911,7 +9911,7 @@ header.sticky .navbar.header-dark .navbar-toggler-line {
   .navbar-nav
   > .nav-item.dropdown.simple-dropdown:hover
   > a {
-  color: rgba(0, 0, 0, 0.6) !important;
+  color: #ddd !important;
 }
 
 /* header logo */
