@@ -477,3 +477,65 @@ img.mfp-img {
     padding-right: 6px;
   }
 }
+
+
+
+.mfp-arrow-right:after,
+.mfp-arrow-left:after {
+  display: none;
+}
+.mfp-arrow-right:before {
+  border-left: none;
+  content: "\e628";
+  font-size: 18px;
+  font-family: "themify";
+  color: #fff;
+  line-height: 60px;
+  background: #232323;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border: none;
+}
+.mfp-arrow-left:before {
+  border-right: none;
+  content: "\e629";
+  font-size: 18px;
+  font-family: "themify";
+  color: #fff;
+  line-height: 60px;
+  background: #232323;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border: none;
+}
+.mfp-bottom-bar {
+  margin-top: -24px;
+  font-size: 12px;
+}
+.mfp-close {
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+.mfp-figure {
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 0.4s;
+  -moz-animation-duration: 0.4s;
+  -ms-animation-duration: 0.4s;
+  -o-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+}
