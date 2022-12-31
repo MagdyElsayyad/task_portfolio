@@ -11193,6 +11193,20 @@ header .header-cart-icon .cart-count {
 .grid.grid-6col li.grid-item-double {
   width: 33.33%;
 }
+.grid.sm-grid-6col li { width: 16.67%; }
+.grid.sm-grid-6col li.grid-item-double { width: 33.33%; }
+.grid.sm-grid-5col li { width: 20%; }
+.grid.sm-grid-5col li.grid-item-double { width: 40%; }
+.grid.sm-grid-4col li { width: 25%; }
+.grid.sm-grid-4col li.grid-item-double { width: 50%; }
+.grid.sm-grid-3col li { width: 33.33%; }
+.grid.sm-grid-3col li.grid-item-double { width: 66.67%; }
+.grid.sm-grid-2col li { width: 50%; }
+.grid.sm-grid-2col li.grid-item-double { width: 100%; }
+.grid.sm-grid-1col li { width: 100%; }
+
+/* gutter type */
+
 
 /* grid 5 column */
 .grid.grid-5col li {
@@ -11661,4 +11675,14 @@ header .header-cart-icon .cart-count {
   white-space: nowrap;
   z-index: 1;
   font-family: inherit;
+}
+
+
+@media (max-width: 500px){
+    .grid.xs-grid-1col li { width: 100%; }
+    .grid.grid-3col li {
+        width: 100%;
+        float: none;
+        list-style: none;
+    }
 }
