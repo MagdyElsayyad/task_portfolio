@@ -36,4 +36,17 @@
         }
     });
 
+    $( document ).on( 'click', '.portfolio-filter > li > a', function () {
+        var _this           = $( this ),
+            parentSectionObj= _this.parents( 'section' );
+        parentSectionObj.find( '.portfolio-filter > li' ).removeClass( 'active' );
+        _this.parent().addClass( 'active' );
+        var selector        = _this.attr( 'data-filter' ),
+            portfolioFilter = parentSectionObj.find( '.portfolio-wrapper' );
+        
+        // Isotope filter
+        portfolioFilter.isotope({ filter: selector });
+        return false;
+    });
+
 })( jQuery );
