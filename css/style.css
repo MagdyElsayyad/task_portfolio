@@ -4,18 +4,13 @@
 
 
 html {
-  font-size: 14px;
-}
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-body {
   font-size: 15px;
+}
+
+body {
   line-height: 30px;
   font-weight: 400;
-  color: #fff;
+  color: #f0f0f0;
   background: #111;
   font-family: "Poppins", sans-serif;
   padding: 0;
@@ -24,9 +19,42 @@ body {
   -moz-osx-font-smoothing: grayscale;
   word-break: break-word;
 }
-body,
-html {
-  -moz-osx-font-smoothing: grayscale;
+.header_title{
+    position: relative;
+}
+.header_title_border{
+    position: absolute;
+    width: 80px;
+    height: 5px;
+    background-color: #009e66 ;
+    left: 0; 
+    right: 0; 
+    margin: auto;
+    bottom: -20px;
+}
+
+
+.text-green{
+  color: #009e66;
+}
+.header_title_border span{
+    position: absolute;
+    height: 100%;
+    display: inline-block;
+    width: 12px;
+    border-left: 4px solid #111;
+    border-right: 4px solid #111;
+    left: 2px;
+    animation: anime 3s linear infinite;
+}
+
+@keyframes anime{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: 100%;
+    }
 }
 
 a{
@@ -62,46 +90,16 @@ ul {
 
 
 
-header [class^="container-"] [class^="col-"],
-header [class^="container-"] [class*=" col-"] {
-  position: relative;
-  padding-left: 15px;
-  padding-right: 15px;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  :root {
-    scroll-behavior: auto;
-  }
-}
-
-.alt-font {
-  font-family: "Poppins", sans-serif;
-}
 
 
 
 
 .bg-white {
-  background-color: #fff;
-}
-.bg-transparent {
-  background-color: transparent;
-}
-.bg-slate-blue {
-  background-color: #262b35;
+  background-color: #f0f0f0;
 }
 
-.bg-gradient-fast-blue-purple {
-  background-image: linear-gradient(
-    to right top,
-    #0039e3,
-    #4132e0,
-    #5e28dd,
-    #741bd9,
-    #8600d4
-  );
-}
+
 
 
 section {
@@ -110,49 +108,8 @@ section {
 }
 
 
-.box-shadow-large {
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-}
-
-.border-top {
-  border-top: 1px solid !important;
-}
-
-.border-color-white-transparent {
-  border-color: rgba(255, 255, 255, 0.1) !important;
-}
-
-.border-radius-6px {
-  border-radius: 6px;
-}
 
 
-
-.margin-15px-bottom {
-  margin-bottom: 15px;
-}
-
-.no-margin-bottom {
-  margin-bottom: 0 !important;
-}
-
-
-
-.padding-6-rem-bottom {
-  padding-bottom: 6rem;
-}
-
-
-
-.padding-40px-tb {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
 
 .icon-very-small {
   font-size: 13px;
@@ -216,7 +173,7 @@ section {
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link:focus {
-  color: #fff !important;
+  color: #f0f0f0 !important;
   cursor: pointer;
 }
 .navbar.navbar-light .navbar-nav .nav-link {
@@ -325,7 +282,7 @@ header .navbar .navbar-brand .mobile-logo {
   border: 0;
   border-bottom: 1px solid;
   border-color: transparent;
-  color: #fff;
+  color: #f0f0f0;
   padding-bottom: 2px;
 }
 .grid-filter > li.active > a,
@@ -335,7 +292,7 @@ header .navbar .navbar-brand .mobile-logo {
   border: 0;
   color: inherit;
   border-bottom: 1px solid;
-  color: #ddd;
+  color: #009e66;
 }
 
 
@@ -454,7 +411,7 @@ header .navbar .navbar-brand .mobile-logo {
   .subscribe-popup .modal-popup-main .mfp-close,
   .subscribe-popup .modal-popup-main .mfp-close:active {
     position: absolute;
-    color: #fff;
+    color: #f0f0f0;
   }
   
   .lightbox-gallery a {
